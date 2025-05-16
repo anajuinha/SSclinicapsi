@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SS Confiança – Psicologia com Excelência, Ética e Inovação</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .partner-logo {
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: all 0.3s ease;
+        }
+        
+        .partner-logo:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="gradient-bg text-white">
+        <div class="container mx-auto px-6 py-12 md:py-20">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">🧠 SS CONFIANÇA</h1>
+                    <p class="text-xl md:text-2xl mb-6">Psicologia com Excelência, Ética e Inovação</p>
+                    <p class="text-blue-100 mb-8">Clínica especializada em psicologia clínica, organizacional, neuropsicológica e forense, reconhecida por sua atuação técnica, ética e inovadora.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#servicos" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-blue-50 transition">Nossos Serviços</a>
+                        <a href="#contato" class="border border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-blue-600 transition">Contato</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Psicóloga atendendo" class="rounded-xl shadow-2xl w-full max-w-md floating">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">👥 Quem Somos</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-4xl mx-auto text-lg">
+                    Atuamos com uma equipe multidisciplinar altamente qualificada, comprometida com a excelência no atendimento presencial e remoto, por meio de plataforma própria de telepsicologia, com segurança, sigilo e confiabilidade.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-blue-50 p-8 rounded-xl">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Equipe Qualificada</h3>
+                    <p class="text-gray-600">Profissionais com CRP ativo, formação técnica e experiência comprovada em diversas áreas da psicologia.</p>
+                </div>
+                
+                <div class="bg-blue-50 p-8 rounded-xl">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Ética e Sigilo</h3>
+                    <p class="text-gray-600">Atendimento com total sigilo e respeito aos princípios éticos da profissão, conforme resoluções do CFP.</p>
+                </div>
+                
+                <div class="bg-blue-50 p-8 rounded-xl">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-laptop-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Tecnologia Integrada</h3>
+                    <p class="text-gray-600">Plataforma própria de telepsicologia com prontuário eletrônico, agendamento e armazenamento seguro de dados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="servicos" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">🎯 Nossos Principais Eixos de Atuação</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-md service-card transition duration-300">
+                    <div class="text-blue-600 text-3xl mb-4">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Avaliações Psicológicas para Concursos Públicos</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                            <span>Seleções, admissões e exames periódicos</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                            <span>Pareceres técnicos e avaliações de heteroidentificação</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                            <span>Conformidade com os princípios legais e éticos do CFP</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-md service-card transition duration-300">
+                    <div class="text-blue-600 text-3xl mb-4">
+                        <i class="fas fa-user-tag"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Avaliações de Heteroidentificação</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                            <span>Bancas presenciais e online com gravação e registro</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                            <span>Atuação em conformidade com os critérios da Lei nº 12.990/2014</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                            <span>Equipes com formação em diversidade, raça e relações étnico-raciais</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-md service-card transition duration-300">
+                    <div class="text-blue-600 text-3xl mb-4">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Avaliações Clínicas e Neuropsicológicas</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                            <span>Diagnóstico de transtornos do neurodesenvolvimento</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                            <span>Emissão de laudos psicológicos e neuropsicológicos</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                            <span>Equipe especializada em TEA, TDAH, AVC, Alzheimer, entre outros</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="bg-white p-8 rounded-xl shadow-md service-card transition duration-300">
+                    <div class="text-blue-600 text-3xl mb-4">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Avaliações Psicológicas Especiais</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                            <span>Porte de Arma de Fogo</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                            <span>Manuseio de Explosivos</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                            <span>Avaliações para Cirurgias (bariátrica, vasectomia, laqueadura, etc.)</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="bg-white p-8 rounded-xl shadow-md service-card transition duration-300">
+                    <div class="text-blue-600 text-3xl mb-4">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Avaliação Psicológica para Seleção em Empresas</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                            <span>Apoio técnico para processos seletivos</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                            <span>Identificação de perfis comportamentais compatíveis</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                            <span>Redução de custos com rotatividade e absenteísmo</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="bg-white p-8 rounded-xl shadow-md service-card transition duration-300">
+                    <div class="text-blue-600 text-3xl mb-4">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Atendimento Clínico Psicológico</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                            <span>Psicoterapia individual, familiar e em grupo</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                            <span>Modalidades presencial e online com aplicativo próprio</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                            <span>Acolhimento para todas as idades e perfis</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">🏛️ Credenciamentos e Parcerias Institucionais</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-4xl mx-auto text-lg">
+                    Atuamos em parceria com importantes órgãos públicos e instituições em todo o país.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+                <div class="flex justify-center items-center h-24">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Bras%C3%A3o_de_Contagem.svg/1200px-Bras%C3%A3o_de_Contagem.svg.png" alt="Prefeitura de Contagem" class="h-16 object-contain partner-logo">
+                </div>
+                <div class="flex justify-center items-center h-24">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Bras%C3%A3o_de_Ariquemes.svg/1200px-Bras%C3%A3o_de_Ariquemes.svg.png" alt="Prefeitura de Ariquemes" class="h-16 object-contain partner-logo">
+                </div>
+                <div class="flex justify-center items-center h-24">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Bras%C3%A3o_do_Tribunal_de_Justi%C3%A7a_do_Acre.svg/1200px-Bras%C3%A3o_do_Tribunal_de_Justi%C3%A7a_do_Acre.svg.png" alt="TJAC" class="h-16 object-contain partner-logo">
+                </div>
+                <div class="flex justify-center items-center h-24">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Bras%C3%A3o_do_Minist%C3%A9rio_P%C3%BAblico_do_Brasil.svg/1200px-Bras%C3%A3o_do_Minist%C3%A9rio_P%C3%BAblico_do_Brasil.svg.png" alt="Ministério Público" class="h-16 object-contain partner-logo">
+                </div>
+                <div class="flex justify-center items-center h-24">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Bras%C3%A3o_da_Pol%C3%ADcia_Federal_do_Brasil.svg/1200px-Bras%C3%A3o_da_Pol%C3%ADcia_Federal_do_Brasil.svg.png" alt="Polícia Federal" class="h-16 object-contain partner-logo">
+                </div>
+                <div class="flex justify-center items-center h-24">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Bras%C3%A3o_da_Pol%C3%ADcia_Rodovi%C3%A1ria_Federal.svg/1200px-Bras%C3%A3o_da_Pol%C3%ADcia_Rodovi%C3%A1ria_Federal.svg.png" alt="PRF" class="h-16 object-contain partner-logo">
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-blue-50 rounded-xl p-8 max-w-4xl mx-auto">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/3 mb-6 md:mb-0 flex justify-center">
+                        <div class="bg-blue-100 text-blue-600 rounded-full w-24 h-24 flex items-center justify-center text-4xl">
+                            <i class="fas fa-users"></i>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 text-center md:text-left">
+                        <h3 class="text-xl font-bold mb-2 text-gray-800">Atendimento em Larga Escala</h3>
+                        <p class="text-gray-600">
+                            Atendemos mais de <span class="font-bold text-blue-600">30 mil colaboradores</span> via plataforma própria de Telepsicologia.
+                        </p>
+                        <p class="text-gray-600 mt-2">
+                            Responsáveis pelas avaliações psicológicas e de heteroidentificação do <span class="font-bold">CFO PMPB 2025</span>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology -->
+    <section class="py-16 gradient-bg text-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">💻 Tecnologia a Favor da Saúde Mental</h2>
+                    <p class="text-blue-100 mb-6 text-lg">
+                        A SS Confiança dispõe de um aplicativo próprio de telepsicologia, integrado com prontuário eletrônico, agendamento, assinatura digital e armazenamento seguro de dados.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-300 mt-1 mr-3"></i>
+                            <span>Plataforma segura e confiável</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-300 mt-1 mr-3"></i>
+                            <span>Prontuário eletrônico integrado</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-300 mt-1 mr-3"></i>
+                            <span>Sistema de agendamento online</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-300 mt-1 mr-3"></i>
+                            <span>Armazenamento em nuvem com criptografia</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-blue-300 mt-1 mr-3"></i>
+                            <span>Assinatura digital de documentos</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Aplicativo de telepsicologia" class="rounded-xl shadow-2xl w-full max-w-md">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">📈 Compromisso com a Qualidade</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-6">
+                    <div class="bg-blue-100 text-blue-600 rounded-full w-20 h-20 flex items-center justify-center text-3xl mx-auto mb-4">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Equipe Qualificada</h3>
+                    <p class="text-gray-600">Profissionais com CRP ativo, formação técnica e experiência comprovada</p>
+                </div>
+                
+                <div class="text-center p-6">
+                    <div class="bg-blue-100 text-blue-600 rounded-full w-20 h-20 flex items-center justify-center text-3xl mx-auto mb-4">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Laudos Padronizados</h3>
+                    <p class="text-gray-600">Conforme resoluções do CFP e CNJ</p>
+                </div>
+                
+                <div class="text-center p-6">
+                    <div class="bg-blue-100 text-blue-600 rounded-full w-20 h-20 flex items-center justify-center text-3xl mx-auto mb-4">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Atendimento Humanizado</h3>
+                    <p class="text-gray-600">Com base científica e acolhimento personalizado</p>
+                </div>
+                
+                <div class="text-center p-6">
+                    <div class="bg-blue-100 text-blue-600 rounded-full w-20 h-20 flex items-center justify-center text-3xl mx-auto mb-4">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Ética e Transparência</h3>
+                    <p class="text-gray-600">Em todas as etapas do processo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contato" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">📍 Onde Estamos</h2>
+                    <div class="bg-white p-6 rounded-xl shadow-md mb-6">
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">Sede Principal</h3>
+                        <p class="text-gray-600 mb-4">
+                            <i class="fas fa-map-marker-alt text-blue-500 mr-2"></i>
+                            Rua da Bélgica, 486 – Bairro da Glória (Eldorado) – Contagem/MG
+                        </p>
+                        <div class="h-64 bg-gray-200 rounded-lg overflow-hidden">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.981627144911!2d-44.05868892464806!3d-19.93187698151898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa695c3a3a9a6f1%3A0x1a1d6e1b8e1b8e1b!2sR.%20da%20B%C3%A9lgica%2C%20486%20-%20Eldorado%2C%20Contagem%20-%20MG%2C%2032310-400!5e0!3m2!1spt-BR!2sbr!4v1620000000000!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        <i class="fas fa-globe-americas text-blue-500 mr-2"></i>
+                        Atendimentos em diversos estados, com presença local e via plataforma online
+                    </p>
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Entre em Contato</h2>
+                    <form class="bg-white p-6 rounded-xl shadow-md">
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Nome</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 font-medium mb-2">E-mail</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div class="mb-4">
+                            <label for="phone" class="block text-gray-700 font-medium mb-2">Telefone</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Mensagem</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-medium hover:bg-blue-700 transition">Enviar Mensagem</button>
+                    </form>
+                    
+                    <div class="mt-6 bg-blue-50 p-6 rounded-xl">
+                        <h3 class="text-xl font-bold mb-3 text-gray-800">Outras Formas de Contato</h3>
+                        <div class="space-y-3">
+                            <p class="flex items-center text-gray-600">
+                                <i class="fas fa-phone-alt text-blue-500 mr-3"></i>
+                                (31) 9999-9999
+                            </p>
+                            <p class="flex items-center text-gray-600">
+                                <i class="fas fa-envelope text-blue-500 mr-3"></i>
+                                contato@ssconfianca.com.br
+                            </p>
+                            <p class="flex items-center text-gray-600">
+                                <i class="fab fa-whatsapp text-blue-500 mr-3"></i>
+                                (31) 99999-9999
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <h3 class="text-2xl font-bold mb-4">🧠 SS CONFIANÇA</h3>
+                    <p class="text-gray-400 max-w-xs">
+                        Psicologia com Excelência, Ética e Inovação
+                    </p>
+                </div>
+                
+                <div class="mb-8 md:mb-0">
+                    <h4 class="text-lg font-bold mb-4">Serviços</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Avaliações Psicológicas</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Heteroidentificação</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Avaliações Neuropsicológicas</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Atendimento Clínico</a></li>
+                    </ul>
+                </div>
+                
+                <div class="mb-8 md:mb-0">
+                    <h4 class="text-lg font-bold mb-4">Institucional</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Quem Somos</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Equipe</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Parcerias</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Redes Sociais</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-gray-700 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-600 transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-400 transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 w-10 h-10 rounded-full flex items-center justify-center hover:bg-pink-600 transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+                <p>© 2023 SS Confiança Psicologia. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Form submission (example)
+        const form = document.querySelector('form');
+        if(form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
+                form.reset();
+            });
+        }
+    </script>
+</body>
+</html>
