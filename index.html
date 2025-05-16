@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Saúde Social Confiança – Psicologia com Excelência, Ética e Inovação</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Seu CSS separado -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Garante que o gradiente do header cubra toda a largura e altura do bloco */
+        .gradient-bg {
+            background: linear-gradient(135deg, #8f04df 0%, #921ce0 100%) !important;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+<!-- Header -->
+<header class="gradient-bg text-white">
+    <div class="container mx-auto px-6 py-12 md:py-20">
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">🧠 Clínica Saúde Social Confiança</h1>
+                <p class="text-xl md:text-2xl mb-6">Psicologia com Excelência, Ética e Inovação</p>
+                
+                <!-- Separação das partes -->
+                <p class="text-blue-100 mb-4">
+                    Clínica especializada em psicologia clínica, organizacional, neuropsicológica e forense, reconhecida por sua atuação técnica, ética e inovadora.
+                </p>
+                <p class="flex items-center text-blue-100 mb-2">
+                    <i class="fas fa-map-marker-alt mr-2"></i>
+                    Rua Nicarágua 3174, Bairro Embratel, Porto Velho - RO
+                </p>
+                <p class="flex items-center text-blue-100">
+                    <i class="fas fa-phone-alt mr-2"></i> (69) 3222-5100
+                    <span class="mx-2">|</span>
+                    <i class="fab fa-whatsapp mr-2"></i> (69) 98113-3021
+                </p>
+                
+                <div class="flex flex-wrap gap-4 mt-12">
+                    <a href="#servicos" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-blue-50 transition">Nossos Serviços</a>
+                    <a href="#contato" class="border border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-blue-600 transition">Contato</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center md:pl-12">
+    <img 
+        src="images/minha-nova-imagem.jpg" 
+        alt="Logo Clínica Confiança" 
+        class="max-w-md w-full h-auto rounded-xl shadow-2xl"
+    >
+</div>
+        </div>
+    </div>
+</header>
+
+<!-- Quem Somos e Público-Alvo -->
+<section class="py-16 bg-white" id="sobre">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">👥 Quem Somos</h2>
+            <div class="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+            <p class="text-gray-600 max-w-4xl mx-auto text-lg">
+                A Clínica Confiança é um espaço especializado em psicologia localizado em Porto Velho, Rondônia, oferecendo atendimento multidisciplinar com foco em saúde mental e desenvolvimento humano, presencialmente e por telepsicologia.
+            </p>
+        </div>
+        <!-- Público-Alvo -->
+        <div class="bg-blue-50 border-l-4 border-blue-600 rounded-xl p-8 mb-12 max-w-2xl mx-auto">
+            <h3 class="text-xl font-bold mb-2 text-gray-800">Público-Alvo</h3>
+            <ul class="list-disc text-gray-700 pl-5">
+                <li>Pacientes clínicos, hospitalares e organizacionais</li>
+                <li>Profissionais que necessitam de avaliação psicológica (CNH, porte de arma, concursos)</li>
+                <li>Empresas para recrutamento e seleção</li>
+                <li>Instituições de ensino e pesquisa</li>
+            </ul>
+        </div>
+        <!-- Demandas Atendidas -->
+        <div>
+            <h3 class="text-xl font-bold mb-6 text-gray-800 text-center">Demandas Atendidas</h3>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                    <img src="images/educacao.jpg" alt="Avaliação educacional" class="demanda-img mx-auto mb-2">
+                    <h4 class="text-blue-700 font-semibold mb-1">Educação</h4>
+                    <p class="text-gray-600 text-sm">Avaliação psicológica educacional e orientação vocacional</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                    <img src="images/saude-mental.jpg" alt="Atendimento psicológico" class="demanda-img mx-auto mb-2">
+                    <h4 class="text-blue-700 font-semibold mb-1">Saúde Mental</h4>
+                    <p class="text-gray-600 text-sm">Atendimento psicológico para todas as idades</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                    <img src="images/organizacional.jpg" alt="Avaliações para empresas" class="demanda-img mx-auto mb-2">
+                    <h4 class="text-blue-700 font-semibold mb-1">Organizacional</h4>
+                    <p class="text-gray-600 text-sm">Avaliações para empresas e treinamentos</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md text-center">
+                    <img src="images/forense.jpg" alt="Avaliações forenses" class="demanda-img mx-auto mb-2">
+                    <h4 class="text-blue-700 font-semibold mb-1">Forense</h4>
+                    <p class="text-gray-600 text-sm">Avaliações psicológicas para processos judiciais</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Serviços -->
+<section id="servicos" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">🎯 Nossos Serviços</h2>
+            <div class="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+        </div>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white p-8 rounded-xl shadow-md">
+                <h3 class="text-xl font-bold mb-4 text-gray-800">Avaliações Psicológicas</h3>
+                <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                    <li>Psicotécnico para CNH</li>
+                    <li>Porte de arma e registro</li>
+                    <li>Cirurgia bariátrica</li>
+                    <li>NR34 e NR35</li>
+                    <li>Atestado de saúde mental</li>
+                    <li>Orientação Vocacional</li>
+                    <li>Recrutamento e Seleção</li>
+                </ul>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-md">
+                <h3 class="text-xl font-bold mb-4 text-gray-800">Atendimento Clínico</h3>
+                <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                    <li>Atendimento Psicológico adulto</li>
+                    <li>Atendimento psicológico infantil</li>
+                    <li>Atendimento psicológico a idosos</li>
+                    <li>Atendimento psicológico a gestantes</li>
+                    <li>Psicoterapia individual</li>
+                    <li>Terapia de casal e familiar</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Equipe -->
+<section id="equipe" class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">👩‍⚕️ Nossa Equipe</h2>
+            <div class="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+        </div>
+        <div class="grid md:grid-cols-4 gap-8">
+            <div class="bg-blue-50 p-8 rounded-xl text-center">
+                <img src="images/risomar.jpg" alt="Risomar Ferreira de Souza" class="foto-profissional">
+                <h3 class="text-lg font-bold text-gray-800">Risomar Ferreira de Souza</h3>
+                <p class="text-blue-700 font-semibold mb-2">CRP 24/0458</p>
+                <p class="text-gray-700 text-sm mb-1"><b>Formação:</b> Psicóloga com pós-graduação em Psicologia Clínica, Educacional e Organizacional, Gestalt Terapia, Psicoterapia Analítica e Avaliação Psicológica.</p>
+                <p class="text-gray-700 text-sm"><b>Experiência:</b> Mais de 25 anos atuando em clínica, organizacional e como docente universitária.</p>
+            </div>
+            <div class="bg-blue-50 p-8 rounded-xl text-center">
+                <img src="images/maria.jpg" alt="Maria Aparecida Matos" class="foto-profissional">
+                <h3 class="text-lg font-bold text-gray-800">Maria Aparecida Matos</h3>
+                <p class="text-blue-700 font-semibold mb-2">CRP 24/01256</p>
+                <p class="text-gray-700 text-sm mb-1"><b>Formação:</b> Especialista em Avaliação Psicológica, Gestalt Terapia e Psicologia do Trânsito. MBA em Neurociência e Psicologia Positiva.</p>
+                <p class="text-gray-700 text-sm"><b>Experiência:</b> Atendimento clínico a adultos e idosos, terapia de casal e familiar.</p>
+            </div>
+            <div class="bg-blue-50 p-8 rounded-xl text-center">
+                <img src="images/sueli.jpg" alt="Sueli Carvalho" class="foto-profissional">
+                <h3 class="text-lg font-bold text-gray-800">Sueli Carvalho</h3>
+                <p class="text-blue-700 font-semibold mb-2">CRP 24/00277</p>
+                <p class="text-gray-700 text-sm mb-1">
+                    <b>Formação:</b> Psicóloga Clínica. Especialista em Leitura Dinâmica e Memorização, Ludoterapia, Psicologia Humanista.
+                </p>
+                <p class="text-gray-700 text-sm">
+                    <b>Experiência:</b> Educação Especial: Aspectos Legais, Teóricos e Psicoeducacionais, Psicologia Escolar, Psicomotricidade Infantil, Estratégias de Aprendizagem, Avaliação Psicopedagógica.
+                </p>
+            </div>
+            <div class="bg-blue-50 p-8 rounded-xl text-center">
+                <img src="images/izabel.jpg" alt="Izabel Rodrigues de Oliveira" class="foto-profissional">
+                <h3 class="text-lg font-bold text-gray-800">Izabel Rodrigues de Oliveira</h3>
+                <p class="text-blue-700 font-semibold mb-2">CRP 24/00853</p>
+                <p class="text-gray-700 text-sm mb-1"><b>Formação:</b> Especialista em Terapia Cognitivo-Comportamental e Psicologia do Trânsito. Residência em Saúde Mental.</p>
+                <p class="text-gray-700 text-sm"><b>Experiência:</b> Atuação em saúde mental hospitalar e clínica particular.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Parcerias & Credenciamentos -->
+<section class="py-16 bg-gray-50" id="parcerias">
+  <div class="container mx-auto px-6 flex flex-col items-center">
+    <div class="text-center mb-12 w-full">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">🏛️ Parcerias & Credenciamentos</h2>
+      <div class="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
+      <p class="text-gray-600 max-w-4xl mx-auto text-lg">
+        A Clínica Confiança mantém parcerias estratégicas com instituições públicas e privadas.
+      </p>
+    </div>
+    <!-- Logos centralizados -->
+    <div class="w-full flex flex-wrap justify-center items-center gap-12 mb-12">
+      <div class="flex flex-col items-center">
+        <img src="images/detran-ro.png" alt="DETRAN-RO" class="h-16 object-contain partner-logo mb-2">
+        <span class="text-gray-700 text-sm">DETRAN-RO</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <img src="images/policia-federal.png" alt="Polícia Federal" class="h-16 object-contain partner-logo mb-2">
+        <span class="text-gray-700 text-sm">Polícia Federal</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <img src="images/hospital-de-base.png" alt="Hospital de Base" class="h-16 object-contain partner-logo mb-2">
+        <span class="text-gray-700 text-sm">Hospital de Base</span>
+      </div>
+      <div class="flex flex-col items-center">
+        <img src="images/clube-da-pizza.png" alt="Clube da Pizza" class="h-16 object-contain partner-logo mb-2">
+        <span class="text-gray-700 text-sm text-center">Clube da Pizza</span>
+      </div>
+    </div>
+    <!-- Bloco ações sociais centralizado -->
+    <div class="w-full max-w-4xl flex flex-col md:flex-row justify-center items-center gap-8">
+      <div class="bg-blue-50 p-8 rounded-xl w-full max-w-md">
+        <h3 class="text-xl font-bold mb-3 text-gray-800">Ações Sociais</h3>
+        <ul class="list-disc pl-5 text-gray-700">
+          <li>Doações de kits escolares para crianças carentes</li>
+          <li>Distribuição de presentes no Natal</li>
+          <li>Atividades recreativas com idosos</li>
+          <li>Aconselhamento para jovens</li>
+        </ul>
+      </div>
+      <div class="flex justify-center w-full">
+        <img src="images/acoes-sociais.jpg" alt="Ações sociais da clínica" class="acoes-img mx-auto">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contato -->
+<section id="contato" class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">📍 Onde Estamos</h2>
+                <div class="bg-blue-50 p-6 rounded-xl shadow-md mb-6">
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Sede Principal</h3>
+                    <p class="text-gray-600 mb-4">
+                        <i class="fas fa-map-marker-alt text-blue-500 mr-2"></i>
+                        Rua Nicarágua 3174, Bairro Embratel, Porto Velho - RO
+                    </p>
+                    <div class="h-64 bg-gray-200 rounded-lg overflow-hidden">
+                        <iframe src="https://www.google.com/maps?output=embed&q=Rua+Nicarágua+3174+Porto+Velho+RO" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <p class="text-gray-600">
+                    <i class="fas fa-globe-americas text-blue-500 mr-2"></i>
+                    Atendimentos presenciais e online.
+                </p>
+            </div>
+            <div class="md:w-1/2 md:pl-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Entre em Contato</h2>
+                <form class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 font-medium mb-2">Nome</label>
+                        <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 font-medium mb-2">E-mail</label>
+                        <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div class="mb-4">
+                        <label for="phone" class="block text-gray-700 font-medium mb-2">Telefone</label>
+                        <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-gray-700 font-medium mb-2">Mensagem</label>
+                        <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-medium hover:bg-blue-700 transition">Enviar Mensagem</button>
+                </form>
+                <div class="mt-6 bg-blue-50 p-6 rounded-xl">
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">Outras Formas de Contato</h3>
+                    <div class="space-y-3">
+                        <p class="flex items-center text-gray-600">
+                            <i class="fas fa-phone-alt text-blue-500 mr-3"></i>
+                            (69) 3222-5100
+                        </p>
+                        <p class="flex items-center text-gray-600">
+                            <i class="fas fa-envelope text-blue-500 mr-3"></i>
+                            ssconfianca@gmail.com
+                        </p>
+                        <p class="flex items-center text-gray-600">
+                            <i class="fab fa-whatsapp text-blue-500 mr-3"></i>
+                            (69) 98113-3021
+                        </p>
+                        <p class="flex items-center text-gray-600">
+                            <i class="fab fa-instagram text-blue-500 mr-3"></i>
+                            @confiancapsi | @risomarpsicologa
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-12">
+    <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between">
+            <div class="mb-8 md:mb-0">
+                <h3 class="text-2xl font-bold mb-4">🧠 Clínica Confiança</h3>
+                <p class="text-gray-400 max-w-xs">
+                    Psicologia com Excelência, Ética e Inovação
+                </p>
+            </div>
+            <div class="mb-8 md:mb-0">
+                <h4 class="text-lg font-bold mb-4">Serviços</h4>
+                <ul class="space-y-2">
+                    <li><a href="#servicos" class="text-gray-400 hover:text-white transition">Avaliações Psicológicas</a></li>
+                    <li><a href="#servicos" class="text-gray-400 hover:text-white transition">Heteroidentificação</a></li>
+                    <li><a href="#servicos" class="text-gray-400 hover:text-white transition">Avaliações Neuropsicológicas</a></li>
+                    <li><a href="#servicos" class="text-gray-400 hover:text-white transition">Atendimento Clínico</a></li>
+                </ul>
+            </div>
+            <div class="mb-8 md:mb-0">
+                <h4 class="text-lg font-bold mb-4">Institucional</h4>
+                <ul class="space-y-2">
+                    <li><a href="#sobre" class="text-gray-400 hover:text-white transition">Quem Somos</a></li>
+                    <li><a href="#parcerias" class="text-gray-400 hover:text-white transition">Parcerias</a></li>
+                    <li><a href="#contato" class="text-gray-400 hover:text-white transition">Contato</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-4">Redes Sociais</h4>
+                <div class="flex space-x-4">
+                    <a href="#" class="bg-gray-700 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-600 transition">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="bg-gray-700 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-400 transition">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="bg-gray-700 w-10 h-10 rounded-full flex items-center justify-center hover:bg-pink-600 transition">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="bg-gray-700 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+            <p>© 2025 Clínica Confiança Psicologia. Todos os direitos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        const href = anchor.getAttribute('href');
+        if (href.length > 1 && document.querySelector(href)) {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(href).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        }
+    });
+    // Form submission (example)
+    const form = document.querySelector('form');
+    if(form) {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
+            form.reset();
+        });
+    }
+</script>
+
+</body>
+</html>
